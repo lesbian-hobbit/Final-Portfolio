@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ALMAREZ Portfolio</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+body{
+	margin:0;
+    font-family: Papyrus;
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, #d9d9d9 100%);
+    
+}
+.header {
+  padding: 10px;
+  text-align: center;
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, #ff99ff 100%);
+  color: white;
+  text-shadow: 2px 2px black;
+  overflow: auto;
+}
+.menu {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, #d9d9d9 100%);
+  border-radius: 20px;
+  border-radius: 20px;
+  border: 2px solid #cc33ff 0%, #ff99ff 100%;
+  text-shadow: 2px 2px black;
+  overflow: auto;
+	}
+.menu a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;  
+  border-radius: 20px;
+  border-radius: 20px;
+  border: 2px solid white;
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, #d9d9d9 100%);
+}
+.menu a.right {
+  float: right;
+  border-radius: 20px;
+  border-radius: 20px;
+  border: 2px white;
+}
+.menu a:hover {
+  background-color: blue;
+  color: black;
+ 
+  
+}
+.bodys {
+-ms-flex: 70%;  flex: 70%;
+  padding: 200px;
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, #d9d9d9 100%);
+  font-size: 20px;
+  color: white;
+text-shadow: 2px 2px black;
+overflow: auto;
+justify-content: center;
+text-align: center;
+}
+.side:hover{
+  width: 450px;
+  height: 450px;
+}
+.side {
+  float: left;
+  clear: left;
+  background: white;
+  padding: 100px;
+  width: 30%;
+  height: 100;
+  color: black;
+  font-family: arial;
+  border-radius: 20px;
+  border: 2px solid grey;
+  border-style: outset;
+  margin-right: 150px;
+  margin-left: 80px;
+  box-shadow: 10px 10px;
+  transition: width 4s, height 4s;
+  overflow: auto;
+
+  }
+ .right {
+  float: right;
+  clear: right;
+  background: white;
+  padding: 100px;
+  width: 30%;
+  height: 140;
+  color: black;
+  font-family: arial;
+  border-radius: 20px;
+  border: 2px solid grey;
+  border-style: outset;
+  margin-top: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  box-shadow: 10px 10px blue;
+  transition: width 4s, height 4s;
+  overflow: auto;
+ }
+ .right:hover{
+  width: 450px;
+  height: 450px;
+}
+button{
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  background-color: violet;
+  overflow: auto;
+}
+button a:hover{
+ color: black;
+background-color: pink;
+}
+.center {
+  -ms-flex: 50%;
+  flex: 50%;
+  float: center;
+  background: white;
+  padding: 50px;
+  color: black;
+  font-family: arial;
+  border-radius: 20px;
+  border-style: outset;
+  border: 2px solid grey;
+  width: 50%;
+  height: 20%;
+  margin: auto;
+}
+.center1 {
+  -ms-flex: 50%;
+  flex: 50%;
+  float: right;
+  background: white;
+  padding: 50px;
+  color: black;
+  font-family: arial;
+  border-radius: 20px;
+  border-top-width: 20px;
+  border-right-width:100px;
+  border-style: outset;
+  border: 2px solid grey;
+  width: 50%;
+  height: 250px;
+  margin: auto;
+  margin-right: 400px;
+  }
+.box {
+  float: left;
+  width: 300px;
+  border: 2px solid black;
+  padding: 50px;
+  margin: 20px;
+  box-shadow: 10px 10px white;
+  overflow: auto;
+}
+.boxl {
+  float: right;
+  width: 300px;
+  border: 2px solid black;
+  padding: 50px;
+  margin: 20px;
+  box-shadow: 10px 10px white;
+  overflow: auto;
+}
+.footers {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height:50px;
+  background: linear-gradient(to bottom, #cc33ff 0%, #ff99ff 100%);
+  color: white;
+  text-align: center;
+  }
+footer {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  position: relative;
+  animation-name: wisp;
+  animation-duration: 5s;
+  animation-direction: reverse;
+  animation: wisp 5s linear 2s infinite alternate;
+}
+@keyframes wisp {
+    0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+  border-color: black;
+  box-shadow: 5px 5px black;
+  
+}
+
+.product > .level {
+  background-color: black;
+  color: white;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: black;
+  font-weight: 400;
+}
+
+.product > button:hover {
+  background-color: purple;
+  transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+  }
+}
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+}
+}
+div.gallery {
+  border: 1px solid black;
+   border: 1px;
+  border-color: black;
+}
+
+div.gallery:hover {
+  border: 1px solid white;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+   border: 1px;
+  border-color: black;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+   border: 1px;
+  border-color: black;
+}
+
+
+.project-tile {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+  border: 1px;
+  border-color: black;
+}
+
+@media only screen and (max-width: 700px) {
+  .project-tile {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .project-tile {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+ content: "";
+  display: table;
+  clear: both;
+  
+}
+#video {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#video > iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+</style>
+
+<body>
+<section id = "welcome-section">
+	<div class="header">
+
+  		<h1>Almarez, joshua carbie D</h1>
+
+  		<h3>student</h3>
+	</div>
+	<footer></footer>
+
+	<div id="navbar" class="menu">
+    
+ 		<a href="index.html" class="active">Home</a>
+    <a href = "info.html">Information</a>
+    <a href="profile.html">Profile</a>
+    <a href="#Contact">Contact</a>
+   
+		</div>
+	<div class= "bodys">
+		<h1>Hi, I'm Almarez, Joshua carbie D. and i'm a Student</h1>
+		<p>I'M 1st year Student of University of Cordillera but taking a 2nd year and 3rd year subjects.</p>
+		<p>I support and share files to my fellow students in doing acvities and exam. >_-</p>
+		<footer></footer>
+	</div>
+</section>
+	<section id="pricing">
+      <div class="product" id="rtx-3070">
+        <div class="level">Farmer experience</div>
+        
+       
+          <h2>I lived in Mt. Provnce and i experienced farming starting in 1st year highschool until present day</h2>
+         
+          <br>
+        <button class="btn"><a href="profile.html">list of my experience</a></button>
+      </div>
+       <div class="product" id="rtx-3070">
+        <div class="level">Job Experience</div>
+        
+       
+          <h2>I experienced being a computershop attendant and other stuff when there is still no pandemic</h2>
+         
+          <br>
+          
+       
+        
+        <button class="btn"><a href="profile.html">list of my job experience</a></button>
+      </div>
+       <div class="product" id="rtx-3070">
+        <div class="level">SKILLS</div>
+        
+       
+          <h2>My skills differ upon the event or problems that i encounter</h2>
+         
+          <br>
+          
+       
+         <br>
+         
+        <button class="btn"><a href="profile.html">list of my Skills</a></button>
+        <br>
+      </div>
+
+    </section>
+    <section id="pricing">
+      <div class="product" id="rtx-3070">
+        <div class="level">EDUCATION</div>
+          <h4>PARACELIS CENTRAL SCHOOL</h4>
+          <h4>PARACELIS NATIONAL HIGHSCHOOL (Junior high)</h4>
+          <h4>UNIVERSITY OF CORDILLERA (Seniro high)</h4>
+          <h4>UNIVERSITY OF CORDILLERA (College currnet yr level 1)</h4>
+          <br>
+        <button class="btn"><a href="profile.html">Profile</a></button>
+      </div>
+    </section>
+
+    <section id="projects">
+    <h1 style="text-align: center; border: 2px; background-color: black; color: white;">PROJECTS</h1>
+    <div class="project-tile">
+  <div class="gallery">
+    <a target="_blank" href="https://images.squarespace-cdn.com/content/v1/54fc8146e4b02a22841f4df7/1576109959614-JQLPDAFVBOOMM1MRIPOD/ke17ZwdGBToddI8pDm48kIHWgU7HpBspsWWCBPTMc80UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcL_JBFHD4udJ5V2axh2xLAhL9PznQzEybMhg3o13D5xf2jH5PJVelxoWfZFqNYr-j/Cover3.jpg">
+      <img src="https://images.squarespace-cdn.com/content/v1/54fc8146e4b02a22841f4df7/1576109959614-JQLPDAFVBOOMM1MRIPOD/ke17ZwdGBToddI8pDm48kIHWgU7HpBspsWWCBPTMc80UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcL_JBFHD4udJ5V2axh2xLAhL9PznQzEybMhg3o13D5xf2jH5PJVelxoWfZFqNYr-j/Cover3.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <h2 style="text-align: center;">ANIME Documentation</h2>
+    <div class="desc"><a href="https://lesbian-hobbit.github.io/Final-technicalDocumentation/">Click here to see Documentation PROJECT</div></a>
+  </div>
+</div>
+
+
+<div class="project-tile">
+  <div class="gallery">
+    <a target="_blank" href="https://cdn.wpforms.com/wp-content/uploads/2018/07/Final-Survey-Form.png">
+      <img src="https://cdn.wpforms.com/wp-content/uploads/2018/07/Final-Survey-Form.png" alt="Forest" width="600" height="400">
+    </a>
+     <h3 style="text-align: center;">Survey form</h3>
+    <div class="desc"><a href="https://lesbian-hobbit.github.io/Final-SurveyForm/">Click here to see Survey PROJECT</div></a>
+  </div>
+</div>
+
+<div class="project-tile">
+  <div class="gallery">
+    <a target="_blank" href="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ampere/rtx-3090/geforce-ampere-rtx-3090-og-1200x630.jpg">
+      <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ampere/rtx-3090/geforce-ampere-rtx-3090-og-1200x630.jpg" width="600" height="400">
+    </a>
+     <h3 style="text-align: center;">Product landing</h3>
+    <div class="desc"><a href="https://lesbian-hobbit.github.io/Product-Landing/">Click here to see Product landing PROJECT</div></a>
+  </div>
+</div>
+
+<div class="project-tile">
+  <div class="gallery">
+    <a target="_blank" href="https://cdn.nba.com/manage/2020/02/Kobe-memorial-v3.jpg">
+      <img src="https://cdn.nba.com/manage/2020/02/Kobe-memorial-v3.jpg" alt="Mountains" width="600" height="400">
+    </a>
+     <h3 style="text-align: center;">Tribute</h3>
+    <div class="desc"><a href="https://lesbian-hobbit.github.io/Final-Tribute/">Click here to see Tribute PROJECT</div></a>
+  </div>
+</div>
+ </section>
+
+<div class="clearfix"></div>
+    <h3 style="text-align: center; border: 2px; background-color: black; color: white;">My P.e Adventure<a id="project-tile" href="https://www.youtube.com/channel/UCscm4MfLtoNpACrZt4l-E_g" target="_blank"> click here to see more</a>.
+    </h3>
+
+ <div>
+
+<section id="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/twZBcsDqZX0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </iframe>
+    </section>
+
+      <div class = "box" id="Contact">
+    <h3>CONTACT NUMBER</h3>
+    <h4>09166661341</h4>
+  </div>
+    <div class = "boxl">
+    <footer></footer>
+    <h3>Email</h3>
+    <h4>almarezjoshuacarbie@gmail.com</h4>
+  </div>
+    <div class = "center">
+    <footer></footer>
+    <h3 style="text-align: center;">MY PORTFOLIO (github)</h3>
+    <h4  style="text-align: center;"><a  href = "https://github.com/lesbian-hobbit">click here to see my Portfolio</a></h4>
+
+  </div>
+  <h5 style="text-align: center;"><a href="#welcome-section">back to top</a></h5>
+	<footer></footer>
+</head>
+</body>
+</html>
